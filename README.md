@@ -31,13 +31,13 @@ Current Graph
 3. Flags readings above thresholds as "CRITICAL"
 4. Saves logs + graphs for analysis or real-time use
 
-# Run main simulation
+## Run main simulation
 python main.py
 
-# Plot temperature
+## Plot temperature
 python plot_temperature.py
 
-# Plot current
+## Plot current
 python plot_current.py
 
 ---
@@ -53,4 +53,5 @@ python plot_current.py
 ## Author
 
 Made by Sashwath Narayanan
+
 
