@@ -6,15 +6,13 @@ currents = []
 
 with open("data_log.csv", "r") as file:
     reader = csv.reader(file)
-    next(reader)  # skip header
+    next(reader)
 
     for row in reader:
         if row[0] == "Current":
             print("Found Current:", row)
             times.append(row[2])
-            currents.append(int(row[1]))
-
-print("Total points:", len(times))
+            currents.append(float(row[1]))
 
 if len(times) == 0:
     print("No 'Current' readings found in data_log.csv.")
