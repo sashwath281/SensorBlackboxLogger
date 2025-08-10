@@ -9,9 +9,8 @@ with open("data_log.csv", "r") as file:
     next(reader)
 
     for row in reader:
-        if row[0].startswith("Temper"):  # Handles "Temperatu" typo too
-            times.append(row[2])
-            temps.append(int(row[1]))
+        times.append(row[2])
+        temps.append(int(row[1]))
 
 plt.figure(figsize=(10, 5))
 plt.plot(times, temps, marker='o', color='red')
